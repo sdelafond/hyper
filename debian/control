@@ -1,0 +1,31 @@
+Source: python-hyperframe
+Section: python
+Priority: optional
+Maintainer: Sebastien Delafond <seb@debian.org>
+Build-Depends: debhelper (>= 9), dh-python, python-all, python-setuptools,
+ python-pytest, python-hypothesis, python3-all, python3-setuptools,
+ python3-pytest, python3-hypothesis
+Standards-Version: 3.9.8
+Homepage: http://hyper.readthedocs.org/en/latest/
+Vcs-Git: git://anonscm.debian.org/collab-maint/python-hyperframe.git
+Vcs-Browser: https://anonscm.debian.org/git/collab-maint/python-hyperframe.git
+
+Package: python-hyperframe
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}
+Description: Pure-Python HTTP/2 header encoding (HPACK)
+ This module contains a pure-Python HTTP/2 header encoding (HPACK) logic
+ for use in Python programs that implement HTTP/2. It also contains a
+ compatibility layer that automatically enables the use of nghttp2 if
+ it’s available.
+
+Package: python3-hyperframe
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python3:Depends}
+Description: Pure-Python3 HTTP/2 header encoding (HPACK)
+ This module contains a pure-Python HTTP/2 header encoding (HPACK) logic
+ for use in Python programs that implement HTTP/2. It also contains a
+ compatibility layer that automatically enables the use of nghttp2 if
+ it’s available.
+ .
+ This is the Python 3 version of the package.

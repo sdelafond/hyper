@@ -1,0 +1,5 @@
+python-hyperframe (3.2.0-1) unstable; urgency=low
+
+  * New package (Closes: #836273)
+
+ -- Sebastien Delafond <seb@debian.org>  Thu, 01 Sep 2016 11:39:58 +0200

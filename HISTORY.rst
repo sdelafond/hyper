@@ -1,8 +1,26 @@
 Release History
 ===============
 
-dev
----
+4.0.1 (2016-03-13)
+------------------
+
+**Bugfixes**
+
+- Fixed bug with the repr of ``AltSvcFrame``, where building it could throw
+  exceptions if the frame had been received from the network.
+
+4.0.0 (2016-03-13)
+------------------
+
+**Backwards Incompatible API Changes**
+
+- Updated old ALTSVC frame definition to match the newly specified RFC 7838.
+- Remove BLOCKED frame, which was never actually specified.
+- Removed previously deprecated ``SettingsFrame.SETTINGS_MAX_FRAME_SIZE`` and
+  ``SettingsFrame.SETTINGS_MAX_HEADER_LIST_SIZE``.
+
+3.2.0 (2016-02-02)
+------------------
 
 **API Changes (Backward-compatible)**
 
@@ -114,6 +132,4 @@ dev
 1.0.0 (2015-04-12)
 ------------------
 
-- Initial extraction from `hyper`_.
-
-.. _hyper: http://hyper.readthedocs.org/
+- Initial extraction from hyper.

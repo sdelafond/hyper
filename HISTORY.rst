@@ -1,6 +1,38 @@
 Release History
 ===============
 
+6.0.0dev0
+---------
+
+5.1.0 (2017-04-24)
+------------------
+
+**API Changes (Backward-compatible)**
+
+- Added support for ``DataFrame.data`` being a ``memoryview`` object.
+
+5.0.0 (2017-03-07)
+------------------
+
+**Backwards Incompatible API Changes**
+
+- Added support for unknown extension frames. These will be returned in the new
+  ``ExtensionFrame`` object. The flag information for these frames is persisted
+  in ``flag_byte`` if needed.
+
+4.0.2 (2017-02-20)
+------------------
+
+**Bugfixes**
+
+- Fixed AltSvc stream association, which was incorrectly set to ``'both'``:
+  should have been ``'either'``.
+- Fixed a bug where stream IDs on received frames were allowed to be 32-bit,
+  instead of 31-bit.
+- Fixed a bug with frames that had the ``PADDING`` flag set but zero-length
+  padding, whose flow-controlled length was calculated wrongly.
+- Miscellaneous performance improvements to serialization and parsing logic.
+
 4.0.1 (2016-03-13)
 ------------------
 

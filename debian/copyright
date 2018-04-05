@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: hyperframe
-Source: https://pypi.python.org/pypi/hyperframe
+Source: https://github.com/Lukasa/hyper
 
 Files: *
 Copyright: 2014 Cory Benfield <cory@lukasa.co.uk>

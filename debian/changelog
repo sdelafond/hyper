@@ -1,3 +1,9 @@
+python-hyperframe (5.2.0-2) unstable; urgency=medium
+
+  * Set maintainer to Debian QA Group
+
+ -- Sebastien Delafond <seb@debian.org>  Thu, 19 Dec 2019 14:48:56 +0100
+
 python-hyperframe (5.2.0-1) unstable; urgency=medium
 
   * Switch to DEP 14

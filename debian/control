@@ -2,19 +2,11 @@ Source: python-hyperframe
 Section: python
 Priority: optional
 Maintainer: Debian QA Group <packages@qa.debian.org>
-Build-Depends: debhelper (>= 9), dh-python, python-all, python-setuptools,
- python-pytest, python3-all, python3-setuptools, python3-pytest
+Build-Depends: debhelper (>= 9), dh-python, python3-all, python3-setuptools, python3-pytest
 Standards-Version: 4.3.0
 Homepage: https://github.com/Lukasa/hyper
 Vcs-Git: https://salsa.debian.org/debian/python-hyperframe.git
 Vcs-Browser: https://salsa.debian.org/debian/python-hyperframe
-
-Package: python-hyperframe
-Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}
-Description: Pure-Python HTTP/2 framing code
- This module contains a pure-Python codebase that is capable of
- decoding a binary stream into HTTP/2 frames.
 
 Package: python3-hyperframe
 Architecture: all

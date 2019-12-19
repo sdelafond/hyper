@@ -3,7 +3,7 @@
 export PYBUILD_NAME=hyperframe
 
 %:
-	dh $@ --with python2,python3 --buildsystem=pybuild
+	dh $@ --with python3 --buildsystem=pybuild
 
 override_dh_installchangelogs:
 	dh_installchangelogs HISTORY.rst
